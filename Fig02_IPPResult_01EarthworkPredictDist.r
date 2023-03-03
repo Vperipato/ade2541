@@ -34,10 +34,6 @@ prob_0950 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = .950, prob_o
 prob_0950 = subset(prob_0950, interval == 'outer')
 prob_0950$interval = 'outer_0950'
 
-# prob_0500 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = .05, prob_outer = .05, point_est = "mean")
-# prob_0500 = subset(prob_0500, interval == 'outer')
-# prob_0500$interval = 'outer_0500'
-
 zz = mcmc_areas_data(output_array, pars = 'n_Xprime', point_est = "mean")
 zz$interval = 'point'
 
@@ -47,9 +43,6 @@ val_mean = subset(prob_1, interval == 'point')
 val_mean = round(mean(val_mean$x))
 
 breaks = c(val_min, val_mean, val_max)
-
-#probabilidade acumulada acima de 10000
-# mean(zz$x > 10000)
 
 p_probearth =
   ggplot(zz, aes(x=x, y=plotting_density, fill = interval)) +
