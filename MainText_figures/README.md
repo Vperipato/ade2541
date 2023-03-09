@@ -1,4 +1,4 @@
-### **Main text figure files preview** <br />
+### **Main text figures file preview** <br />
 <a href="https://github.com/Vperipato/ade2541/blob/main/MainText_figures/Fig02B_IPPResult_EarthworkPredictDist.r" target="_blank">Fig02B_IPPResult_EarthworkPredictDistribution</a> preview: <br />
 <img src="https://user-images.githubusercontent.com/65520358/222964131-742e796e-bd79-45ab-860b-f453baae609d.png" width="400">
 
