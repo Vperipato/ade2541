@@ -27,10 +27,4 @@ The Inhomogeneous Poisson Process (IPP) model fit was performed using the ‘fit
 <a href="https://github.com/Vperipato/ade2541/blob/main/Fig03_DomesticatedBoxplot.r" target="_blank">Fig03_DomesticatedBoxplot</a> preview: <br />
 <img src="https://user-images.githubusercontent.com/65520358/222964250-eb813699-ab8e-4f65-a8d9-50d061050877.png" width="800">
 
-FigS04to06_PearsonCorrel.r <br />
-
-
-FigS18_AccessibilityHistograms.r <br />
-
-
-FigS19_MAXENTResults.r <br />
+Other sets of R computer codes from supplementary material figures are inside the "Supp_Material_Figures" folder.
