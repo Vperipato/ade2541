@@ -26,7 +26,7 @@ color_pallete = function(n) {
 # library(jtools)
 setwd("F:/LiDAR_Data/Shapefiles/RegLogistica_Variables")
 
-## 1. ABUNDÂNCIA OU PA ##############################################################################
+## 1. ABUNDÃ‚NCIA OU PA ##############################################################################
 files = c('./00PartnersData/ATDN/RawData/ATDN_SpeciesPA_FIX.csv',
           './00PartnersData/ATDN/RawData/ATDN_SpeciesAbundance_FIX.csv')
 
@@ -34,7 +34,7 @@ r = raster('./Modelo_Guido/IPPModelResult_orig.tif')
 
 
 for (x in 1:length(files)) {
-  # Abrir .csv de Abundância  ou Presença/Ausência de espécies por parcela
+  # Abrir .csv de AbundÃ¢ncia  ou PresenÃ§a/AusÃªncia de espÃ©cies por parcela
   csv = read.csv(files[x], header=TRUE, sep=",")
   coordinates(csv)<-~Longitude+Latitude
   csv = raster::extract(r, csv, sp=T)
@@ -51,10 +51,10 @@ for (x in 1:length(files)) {
   
   species = csv[-c(1:4, length(csv))]
   prob_geoglifo = csv$IPPModelResult_orig
-  area = csv$PlotSize/100 # trasnforma a area da parcela de Hectare para Km²
+  area = csv$PlotSize/100 # trasnforma a area da parcela de Hectare para KmÂ²
   allBetas = NULL
   
-  ## 1.1 Regressão (all betas data.frame) ##############################################################################
+  ## 1.1 RegressÃ£o (all betas data.frame) ##############################################################################
   for (i in 1:ncol(species)) {
     #x=explicativa; y=resposta 
     specie_pa = species[,i]
@@ -71,7 +71,7 @@ for (x in 1:length(files)) {
   }
   rm(species, i, area, regressao, csv)
   
-  ## 1.2 Remoção de espécies especificas ##############################################################################
+  ## 1.2 RemoÃ§Ã£o de espÃ©cies especificas ##############################################################################
   #### Plotting response curves
   # Vetores ficticios/
   # allBetas # Finge que este data.frame tem todas as especies nas linhas, estimativas de intercepto, inclinacao e s.e. da inclinacao nas colunas
