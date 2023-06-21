@@ -172,7 +172,7 @@ p_respcurves =
         legend.title = element_blank(),
         legend.position = "none")
 
-savepath = str_c("./rplots/IPPModel04_ResponseCurves.pdf")
+savepath = str_c("./rplots/Fig02D_ResponseCurves.pdf")
 ggsave(savepath, p_respcurves, width = 12, height = 5.45,  units = "cm", dpi = 400, 
-       bg = 'white', device = cairo_pdf)
+       bg = 'transparent', device = cairo_pdf)
 dev.off()
