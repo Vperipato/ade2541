@@ -8,7 +8,6 @@ library(rgdal)
 library(viridis)
 library(ggmap)
 library(mapview)
-library(RStoolbox)
 library(ggspatial)
 library(sf)
 library(stringr)
@@ -19,15 +18,11 @@ library(gtools)
 library(dplyr)
 library(zoo)
 
-setwd("F:/LiDAR_Data/Shapefiles/RegLogistica_Variables/Maxent/NatureModeling_BIAS_EarthworkDensity")
-ifelse(!dir.exists(file.path('./', 'rplot')), dir.create(file.path('./', 'rplot')), FALSE)
+setwd("F:/ade2541-manuscript/Database/Model_MaxEnt")
+ifelse(!dir.exists(file.path('./', 'rplots')), dir.create(file.path('./', 'rplot')), FALSE)
 
+# Check SM to replicate the MaxEnt model
 csv = read.csv('./maxentResults.csv')
-
-mask_raster = raster('F:/LiDAR_Data/Shapefiles/RegLogistica_Variables/00Mask/AmzMask_1km.tif')
-mask_poly = readOGR('F:/LiDAR_Data/Shapefiles/RegLogistica_Variables/00Mask', 'amapoly_div', verbose = F)
-mask_poly = st_as_sf(mask_poly)
-
 
 ## Variable Individual contribution ========================================================================
 df_contrib = str_detect(names(csv), pattern = '.contribution$', negate = FALSE)
@@ -95,7 +90,7 @@ p_varicontrib =
           legend.title = element_blank(),
           legend.position = "none")
 
-savepath_p4 = str_c("./rplot/FigS19C_VariableContribution.png")
+savepath_p4 = str_c("./rplots/FigS19C_VariableContribution.png")
 ggsave(savepath_p4, p_varicontrib, width = 4.45, height = 3.85,  units = c("cm"), dpi = 400, bg = 'white')
 dev.off()
 
@@ -264,6 +259,6 @@ ggplot(data = df_response, aes(x=x, y=y_mean)) +
         legend.position = "none")
 
 
-savepath_p5 = str_c("./rplot/FigS19D_ResponseCurves.png")
+savepath_p5 = str_c("./rplots/FigS19D_ResponseCurves.png")
 ggsave(savepath_p5, p_respcurves, width = 12, height = 5.45,  units = c("cm"), dpi = 400, bg = 'white')
 dev.off()
