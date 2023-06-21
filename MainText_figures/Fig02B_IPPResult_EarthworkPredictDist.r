@@ -22,7 +22,7 @@ library(bayesPO)
 setwd("F:/ade2541-manuscript/Database")
 
 # List .rds files of IPP model output data
-files = list.files("./Modelo_Guido/RawData", pattern = '^est_.*.rds$', full.names = T)
+files = list.files(".", pattern = '^est_.*.rds$', full.names = T)
 po_est_all = do.call(c, lapply(1:4, function(i) readRDS(paste0(files[i]))))
 output_array <- as.array(po_est_all); #rm(po_est_all)
 
