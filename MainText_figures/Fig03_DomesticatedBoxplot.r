@@ -126,6 +126,7 @@ p_boxplot =
         legend.title = element_blank(),
         legend.position = "none")
 
-savepath = str_c("./rplots/Fig03_DomesticatedBoxplot.png")
-ggsave(savepath, p_boxplot, width = 12, height = 18,  units = c("cm"), dpi = 400, bg = 'white')
+savepath = str_c("./rplots/Fig03_DomesticatedBoxplot.pdf")
+ggsave(savepath, p_boxplot, width = 12, height = 18,  units = c("cm"), dpi = 400, 
+       bg = 'transparent', device = cairo_pdf)
 dev.off()
