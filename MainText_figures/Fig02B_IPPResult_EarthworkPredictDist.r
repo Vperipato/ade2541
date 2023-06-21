@@ -69,7 +69,7 @@ p_probearth =
         axis.title = element_blank(),
         legend.position = "none")
 
-savepath = str_c("./rplots/IPPModel02_EarthworkPredictDist.pdf")
+savepath = str_c("./rplots/Fig02B_EarthworkPredictDist.pdf")
 ggsave(savepath, p_probearth, width = 4.45, height = 2.10,  units = "cm", dpi = 400,
        bg = 'transparent', device = cairo_pdf)
 dev.off()
