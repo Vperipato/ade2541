@@ -331,6 +331,6 @@ p_impact = grid.arrange(p_impact,
                                           gp = gpar(fontsize = 7, fontface="bold"),
                                           hjust = 0.5))
 
-savepath = str_c("./rplots/Fig04_ImpactDomesticatedSpecies.png")
+savepath = str_c("./rplots/FigS02_ImpactDomesticatedSpecies.png")
 ggsave(savepath, p_impact, width = 16, height = 15,  units = c("cm"), dpi = 400, bg = 'white')
 dev.off()
