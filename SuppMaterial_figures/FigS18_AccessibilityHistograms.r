@@ -1,7 +1,5 @@
 rm(list = ls(globalenv()))
 gc()
-removeTmpFiles(h=0)
-dev.off()
 options(encoding = "UTF-8") 
 library(raster)
 library(raster)
@@ -13,31 +11,25 @@ library(viridis)
 library(cowplot)
 library(stringr)
 
-setwd("F:/LiDAR_Data/Shapefiles")
+setwd("F:/ade2541-manuscript/Database/")
 
-roads = raster('./RegLogistica_Variables/ObsComponents/OpenStreetMap/Amz_DistRoads1km.tif')
-trees = raster('./RegLogistica_Variables/Hansen/Cliped/Amz_TreeCover20181km.tif')
-shp = read.csv('./RegLogistica_Variables/00PartnersData/01_Earthworks_MergedDatasets.csv')
-coordinates(shp)<-~x+y
-crs(shp) = crs(roads)
+# Load Earthworks presence data
+samples = read_rds('./Earthworks.rds', refhook = NULL)
+# Transform to spatial data
+coordinates(samples)<-~Longitude+Latitude
+crs(samples) = CRS("+init=epsg:4326")
 
-aa = extract(trees, shp, df = T)
-zz = extract(roads, shp, df = T)
+## 1.1 Road Distance Histogram #########################################################
+# Check SM for raster data
+roads = raster('./Rasters/OpenStreetMap/DistanceToRoads.tif')
+hist_roads = extract(roads, samples, df = T)
+names(hist_roads)[2] = 'roads'
+# transform values from m to km
+hist_roads$roads = hist_roads$roads * 0.001
 
-zz$trees = aa$Amz_TreeCover20181km
-names(zz)[2] = 'roads'
-zz$vari = 'geoglifo'
-zz$ID = NULL
-zz$roads = zz$roads * 0.001
-zz = na.omit(zz)
-
-df1 = melt(zz, id.vars = c('vari'))
-
-which(zz$roads >=100)
-# zz$roads[459] = 100L
-
-p1 =
-  ggplot(zz, aes(x = roads)) +
+# ggplot
+p_roads = 
+  ggplot(hist_roads, aes(x = roads)) +
   geom_histogram(color="#fde725", fill="#440154", binwidth = 5, size=.25, boundary = 0) +
   scale_fill_viridis()+
   scale_x_continuous(name="Distance from earthwork to nearest road (km)",
@@ -66,9 +58,18 @@ p1 =
         axis.title.y = element_text(size = 7, face = "bold", margin = margin(1, 0, 0, 0, "pt")),
         legend.title = element_blank(),
         legend.position = "none")
+rm(roads, hist_roads)
 
-p2=
-  ggplot(zz, aes(x = trees)) +
+
+## 1.2 Tree Cover Histogram #########################################################
+# Check SM for raster data
+trees = raster('./Rasters/GFC/GFC2018_v1.6.tif')
+hist_trees = extract(trees, samples, df = T)
+names(hist_trees)[2] = 'trees'
+
+# ggplot
+p_trees=
+  ggplot(hist_trees, aes(x = trees)) +
   geom_histogram(color="#fde725", fill="#440154", binwidth = 5, size=.25, boundary = 0) +
   scale_fill_viridis()+
   scale_x_continuous(name="Tree cover over earthwork (%)",
@@ -95,11 +96,12 @@ p2=
         axis.title.y = element_text(size = 7, face = "bold", margin = margin(1, 0, 0, 0, "pt")),
         legend.title = element_blank(),
         legend.position = "none")
+rm(trees, hist_trees)
+rm(samples)
 
-
-top_row = plot_grid(p1, p2, align = "vh", nrow = 1, labels="AUTO", label_size = 8)
-top_row
-savepath = str_c("./SuppMaterial/FigS18_AccessibilityHistograms.png")
-ggsave(savepath, top_row, width = 12, height = 5.5,  units = c("cm"), dpi = 400, bg = 'white')
-dev.off()  
-
+## 1.3 Merge two plots into single #########################################################
+p_final = plot_grid(p_roads, p_trees, align = "vh", nrow = 1, labels="AUTO", label_size = 8)
+rm(p_roads, p_trees)
+savepath = str_c("./rplots/sm/FigS18_AccessibilityHistograms.png")
+ggsave(savepath, p_final, width = 12, height = 5.5,  units = c("cm"), dpi = 400, bg = 'white')
+dev.off()
