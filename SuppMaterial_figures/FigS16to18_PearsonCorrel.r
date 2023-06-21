@@ -1,7 +1,5 @@
 rm(list = ls(globalenv()))
 gc()
-removeTmpFiles(h=0)
-dev.off()
 options(encoding = "UTF-8") 
 library(stringr)
 library(readr)
@@ -10,58 +8,23 @@ library(corrplot)
 library(RColorBrewer)
 library(stats)
 
-setwd("F:/LiDAR_Data/Shapefiles")
+setwd("F:/ade2541-manuscript/Database/")
 
-# mask = raster("./RegLogistica_Variables/00Mask/AmzMask_1km.tif")
-# # mask[which(mask[] != 'NA')] = 0
-# 
-# ## 1.1 Bioclimatic - Pearson Correl Test =========================================================
-# files1 = list.files("./RegLogistica_Variables/WorldClim/PresentData/", pattern = "WC1.*\\.tif$", full.names = T)
-# files4 = list.files("./RegLogistica_Variables/ObsComponents/OpenStreetMap/", pattern = "Amz_DistRoads1km.tif$", full.names = T)
-# files5 = list.files("./RegLogistica_Variables/Hansen/Cliped/", pattern = "Amz_TreeCover20181km.tif$", full.names = T)
-# 
-# r_bio = stack(files1, files4, files5); rm(files1, files4, files5)
-# names(r_bio) = sapply(str_split(names(r_bio), "_"), "[", 2) #2nd element after "_"
-# 
-# pearson_bio = layerStats(r_bio, 'pearson', na.rm=T)
-# cmatrix_bio = pearson_bio$'pearson correlation coefficient'
-# write.csv(cmatrix_bio, file = "./RegLogistica_Variables/00RCorrelPlots/correlmatrix_bio.csv")
-# 
-# ## 1.2 Edaphic - Pearson Correl Test ==============================================================
-# files1 = list.files("./RegLogistica_Variables/ZUQUIM/Cliped/", pattern = ".tif$", full.names = T)
-# files2 = list.files("./RegLogistica_Variables/SoilGrid/Cliped/", pattern = ".tif$", full.names = T)
-# files4 = list.files("./RegLogistica_Variables/ObsComponents/OpenStreetMap/", pattern = "Amz_DistRoads1km.tif$", full.names = T)
-# files5 = list.files("./RegLogistica_Variables/Hansen/Cliped/", pattern = "Amz_TreeCover20181km.tif$", full.names = T)
-# r1 = stack(files1); r2 = stack(files2); r3 = stack(files4, files5)
-# 
-# r_edap = stack(r1, r2, r3); rm(files1, files2, files4, files5, r1, r2, r3)
-# names(r_edap) = sapply(str_split(names(r_edap), "_"), "[", 2) #2nd element after "_"
-# 
-# pearson_edap = layerStats(r_edap, 'pearson', na.rm=T)
-# cmatrix_edap = pearson_edap$'pearson correlation coefficient'
-# write.csv(cmatrix_edap, file = "./RegLogistica_Variables/00RCorrelPlots/correlmatrix_edap.csv")
-# 
-# ## 1.3 Topographic - Pearson Correl Test ===========================================================
-# files1 = list.files("./RegLogistica_Variables/HydroSHEDS/Cliped/", pattern = ".tif$", full.names = T)
-# files2 = list.files("./RegLogistica_Variables/Ambdata/Cliped/", pattern = ".tif$", full.names = T)
-# files3 = list.files("./RegLogistica_Variables/JRC/Cliped/", pattern = ".tif$", full.names = T)
-# files4 = list.files("./RegLogistica_Variables/ObsComponents/OpenStreetMap/", pattern = "Amz_DistRoads1km.tif$", full.names = T)
-# files5 = list.files("./RegLogistica_Variables/Hansen/Cliped/", pattern = "Amz_TreeCover20181km.tif$", full.names = T)
-# 
-# r1 = stack(files1); r2 = stack(files2); r3 = stack(files3[c(4,1)], files4, files5) 
-# r_topo = stack(r1, r2, r3); rm(files1, files2, files3, files4, files5, r1, r2, r3)
-# names(r_topo) = sapply(str_split(names(r_topo), "_"), "[", 2) #2nd element after "_"
-# 
-# pearson_topo = layerStats(r_topo, 'pearson', na.rm=T)
-# cmatrix_topo = pearson_topo$'pearson correlation coefficient'
-# write.csv(cmatrix_topo, file = "./RegLogistica_Variables/00RCorrelPlots/correlmatrix_topo.csv")
-# 
+## 1.1 Bioclimatic - Pearson Correl Test #########################################################
+# Check SM for public sources of raster data
+files1 = list.files("./Rasters/WorldClim/", pattern = ".tif$", full.names = T)
+files4 = list.files("./Rasters/OpenStreetMap/", pattern = ".tif$", full.names = T)
+files5 = list.files("./Rasters/GFC/", pattern = ".tif$", full.names = T)
 
-## 2. PLOTS Individual ===========================================================
-## Bioclimatic
-c.matrix = read.csv("./RegLogistica_Variables/00RCorrelPlots/correlmatrix_bio.csv", row.names = 1)
-c.matrix = cor(c.matrix)
-# c.matrix = cmatrix_bio
+# Stack bioclimatic rasters & observability
+r_bio = stack(files1, files4, files5); rm(files1, files4, files5)
+
+# Pearson Correl Test
+pearson_bio = layerStats(r_bio, 'pearson', na.rm=T)
+cmatrix_bio = pearson_bio$'pearson correlation coefficient'
+rm(pearson_bio, r_bio)
+## 1.2 Bioclimatic - Correl Plot #########################################################
+c.matrix = cor(cmatrix_bio)
 
 varis.names.y = c("Bio.1: Annual mean temperature",
                   "Bio.2: Mean diurnal range",
@@ -82,7 +45,7 @@ varis.names.y = c("Bio.1: Annual mean temperature",
                   "Bio.17: Precipitation of driest quarter",
                   "Bio.18: Precipitation of warmest quarter",
                   "Bio.19: Precipitation of coldest quarter",
-                  "Distance to nearest road",
+                  "Distance to road",
                   "Tree cover")
 
 varis.names.x = c("Bio.1",
@@ -108,12 +71,13 @@ varis.names.x = c("Bio.1",
                   "Tree cover")
 rownames(c.matrix) = varis.names.y
 colnames(c.matrix) = varis.names.x
+rm(varis.names.y, varis.names.x)
 
-path = str_c("./R_Outputs/Manuscript/Plots/FigS04_CMatrixBio.png")
+savepath = str_c("./rplots/sm/FigS16_CMatrixBio.png")
 title = str_c("Correlation matrix - Bioclimatic data")
-corr = T 
+corr = T
 
-png(path, height = 29, width = 40, units = 'cm', res=500, pointsize = 12)
+png(savepath, height = 29, width = 40, units = 'cm', res=500, pointsize = 12)
 corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", 
          method="color", col=brewer.pal(n=10, name="PuOr"), #col = col(100), #definicao da cor!
          addgrid.col="white", 
@@ -131,11 +95,26 @@ corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", add = T,
          number.cex = 0.8, number.digits = 2, 
          cl.pos = "n", cl.cex=1.0, cl.ratio = 0.08, cl.align = "c")
 dev.off()
+rm(savepath, title, corr, c.matrix)
 
-## Edaphic
-c.matrix = read.csv("./RegLogistica_Variables/00RCorrelPlots/correlmatrix_edap.csv", row.names = 1)
-c.matrix = cor(c.matrix)
-# c.matrix = cmatrix_edap
+## 2.1 Edaphic - Pearson Correl Test #########################################################
+# Check SM for public sources of raster data
+files1 = list.files("./Rasters/ZUQUIM/", pattern = ".tif$", full.names = T)
+files2 = list.files("./Rasters/SoilGrids/", pattern = ".tif$", full.names = T)
+files4 = list.files("./Rasters/OpenStreetMap/", pattern = ".tif$", full.names = T)
+files5 = list.files("./Rasters/GFC/", pattern = ".tif$", full.names = T)
+
+# Stack edaphic rasters & observability
+r1 = stack(files1); r2 = stack(files2); r3 = stack(files4, files5)
+r_edap = stack(r1, r2, r3); rm(files1, files2, files4, files5, r1, r2, r3)
+
+# Pearson Correl Test
+pearson_edap = layerStats(r_edap, 'pearson', na.rm=T)
+cmatrix_edap = pearson_edap$'pearson correlation coefficient'
+rm(pearson_edap, r_edap)
+
+## 2.1 Edaphic - Correl Plot #########################################################
+c.matrix = cor(cmatrix_edap)
 
 varis.names.y = c("Soil cation concentration",
                   "Bulk density",
@@ -149,10 +128,10 @@ varis.names.y = c("Soil cation concentration",
                   "Silt content",
                   "Soil organic carbon",
                   "Total nitrogen",
-                  "Distance to nearest road",
+                  "Distance to road",
                   "Tree cover")
 
-varis.names.x = c("Soil cat. conc.",
+varis.names.x = c("SCC",
                   "Bulk dens.",
                   "Cation exch. cap.",
                   "Clay content",
@@ -168,11 +147,12 @@ varis.names.x = c("Soil cat. conc.",
                   "Tree cover")
 rownames(c.matrix) = varis.names.y
 colnames(c.matrix) = varis.names.x
+rm(varis.names.y, varis.names.x)
 
-path = str_c("./R_Outputs/Manuscript/Plots/FigS05_CMatrixEdap.png")
+savepath = str_c("./rplots/sm/FigS17_CMatrixEdap.png")
 title = str_c("Correlation matrix - Edaphic data")
 corr = T
-png(path, height = 26, width = 28, units = 'cm', res=500, pointsize = 12)
+png(savepath, height = 26, width = 28, units = 'cm', res=500, pointsize = 12)
 # par(mar = c(0, 0, 0, 0) + 0.1)
 corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", 
          method="color", col=brewer.pal(n=10, name="PuOr"), #col = col(100), #definicao da cor!
@@ -190,11 +170,28 @@ corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", add = T,
          number.cex = 0.8, number.digits = 2, 
          cl.pos = "n", cl.cex=1.0, cl.ratio = 0.08, cl.align = "c")
 dev.off()
+rm(savepath, title, corr, c.matrix)
 
-## Topographic
-c.matrix = read.csv("./RegLogistica_Variables/00RCorrelPlots/correlmatrix_topo.csv", row.names = 1)
-c.matrix = cor(c.matrix)
-# c.matrix = cmatrix_topo
+
+## 3.1 Topographic - Pearson Correl Test #########################################################
+# Check SM for public sources of raster data
+files1 = list.files("./Rasters/HydroSHEDS/", pattern = ".tif$", full.names = T)
+files2 = list.files("./Rasters/AMBDATA/", pattern = ".tif$", full.names = T)
+files3 = list.files("./Rasters/JRC/", pattern = ".tif$", full.names = T)
+files4 = list.files("./Rasters/OpenStreetMap/", pattern = "Amz_DistRoads1km.tif$", full.names = T)
+files5 = list.files("./Rasters/GFC/", pattern = "Amz_TreeCover20181km.tif$", full.names = T)
+
+# Stack Topographic rasters & observability
+r1 = stack(files1); r2 = stack(files2); r3 = stack(files3, files4, files5)
+r_topo = stack(r1, r2, r3); rm(files1, files2, files3, files4, files5, r1, r2, r3)
+
+# Pearson Correl Test
+pearson_topo = layerStats(r_topo, 'pearson', na.rm=T)
+cmatrix_topo = pearson_topo$'pearson correlation coefficient'
+rm(pearson_topo, r_topo)
+
+## 3.2 Topographic - Correl Plot #########################################################
+c.matrix = cor(cmatrix_topo)
 
 varis.names.y = c("Aspect",
                   "Elevation",
@@ -221,11 +218,12 @@ varis.names.x = c("Aspect",
                   "Tree cover")
 rownames(c.matrix) = varis.names.y
 colnames(c.matrix) = varis.names.x
+rm(varis.names.y, varis.names.x)
 
-path = str_c("./R_Outputs/Manuscript/Plots/FigS06_CMatrixTopo.png")
+savepath = str_c("./rplots/sm/FigS18_CMatrixTopo.png")
 title = str_c("Correlation matrix - Topographic data")
 corr = T
-png(path, height = 21, width = 28, units = 'cm', res=500, pointsize = 12)
+png(savepath, height = 21, width = 28, units = 'cm', res=500, pointsize = 12)
 corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", 
          method="color", col=brewer.pal(n=10, name="PuOr"), #col = col(100), #definicao da cor!
          addgrid.col="white", 
@@ -243,3 +241,4 @@ corrplot(c.matrix, title="", type = "lower", diag = T, na.label = "NA", add = T,
          number.cex = 0.8, number.digits = 2, 
          cl.pos = "n", cl.cex=1.0, cl.ratio = 0.08, cl.align = "c")
 dev.off()
+rm(savepath, title, corr, c.matrix)
