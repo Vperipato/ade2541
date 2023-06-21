@@ -17,6 +17,9 @@ library(cowplot)
 library(gtools)
 library(dplyr)
 library(bayesplot)
+
+# library(devtools)
+# install_github("GuidoAMoreira/bayesPO")
 library(bayesPO)
 
 setwd("F:/ade2541-manuscript/Database")
@@ -24,7 +27,7 @@ setwd("F:/ade2541-manuscript/Database")
 # List .rds files of IPP model output data
 files = list.files(".", pattern = '^est_.*.rds$', full.names = T)
 po_est_all = do.call(c, lapply(1:4, function(i) readRDS(paste0(files[i]))))
-output_array <- as.array(po_est_all); #rm(po_est_all)
+output_array <- as.array(po_est_all); rm(po_est_all)
 
 prob_1 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = 1, prob_outer = 1, point_est = "mean")
 prob_0950 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = .950, prob_outer = .950, point_est = "mean")
@@ -33,13 +36,6 @@ prob_0950$interval = 'outer_0950'
 
 plot = mcmc_areas_data(output_array, pars = 'n_Xprime', point_est = "mean")
 plot$interval = 'point'
-
-val_min = round(min(prob_0950$x))
-val_max = round(max(prob_0950$x))
-val_mean = subset(prob_1, interval == 'point')
-val_mean = round(mean(val_mean$x))
-
-breaks = c(val_min, val_mean, val_max)
 
 p_probearth =
   ggplot(plot, aes(x=x, y=plotting_density, fill = interval)) +
