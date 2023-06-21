@@ -25,10 +25,9 @@ roads <- raster("03_Model_ObsComp1km/DistRoads_Amazonia1km.tif")
 tree_cover <- raster("03_Model_ObsComp1km/TreeCover2018_Amazonia1km.tif")
 
 ## The actual data
-po_data <- read.csv("01_Earthworks_MergedDatasets.csv")
+po_data <- read_rds('./Earthworks.rds', refhook = NULL)
 str(po_data)
 names(po_data)
-table(po_data$Relation_P.A)
 
 #### Setting up the data for the model ####
 background <- stack(
