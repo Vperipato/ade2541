@@ -104,7 +104,7 @@ p_varicontrib =
         legend.title = element_blank(),
         legend.position = "none")
 
-savepath = str_c("./rplots/IPPModel03_VariableContribution.pdf")
+savepath = str_c("./rplots/Fig02C_VariableContribution.pdf")
 ggsave(savepath, p_varicontrib, width = 4.45, height = 3.85,  units = "cm", dpi = 400, 
        bg = 'transparent', device = cairo_pdf)
 dev.off()
