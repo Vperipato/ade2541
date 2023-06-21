@@ -19,7 +19,7 @@ library(likert)
 setwd("F:/ade2541-manuscript/Database")
 
 # List .rds files of Abundance and Ocurrence regression data
-files = list.files('.', pattern = '.rds$', full.names = T)
+files = list.files('.', pattern = '^GLMReg_.*.rds$', full.names = T)
 
 for (k in seq_along(files)) {
   reg = read_rds(files[k], refhook = NULL)
