@@ -25,20 +25,21 @@ library(bayesPO)
 setwd("F:/ade2541-manuscript/Database")
 
 # List .rds files of IPP model output data
-files = list.files(".", pattern = '^est_.*.rds$', full.names = T)
-po_est_all = do.call(c, lapply(1:4, function(i) readRDS(paste0(files[i]))))
-output_array <- as.array(po_est_all); rm(po_est_all)
+files = list.files(".", pattern = '^IPP_.*.rds$', full.names = T)
+po_est_all = read_rds(files, refhook = NULL)
+output_array <- as.array(po_est_all); rm(po_est_all, files)
 
 prob_1 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = 1, prob_outer = 1, point_est = "mean")
 prob_0950 = mcmc_areas_data(output_array, pars = 'n_Xprime', prob = .950, prob_outer = .950, point_est = "mean")
 prob_0950 = subset(prob_0950, interval == 'outer')
 prob_0950$interval = 'outer_0950'
 
-plot = mcmc_areas_data(output_array, pars = 'n_Xprime', point_est = "mean")
-plot$interval = 'point'
+df_plot = mcmc_areas_data(output_array, pars = 'n_Xprime', point_est = "mean")
+df_plot$interval = 'point'
+rm(output_array)
 
 p_probearth =
-  ggplot(plot, aes(x=x, y=plotting_density, fill = interval)) +
+  ggplot(df_plot, aes(x=x, y=plotting_density, fill = interval)) +
   geom_area(data = subset(prob_0950, interval = 'outer_0950'), color = 'transparent') +
   geom_area(data = subset(prob_1, interval == 'point'), color = 'transparent') +
   geom_line(linetype = "solid", colour='black', size = .25, show.legend =  F) +
@@ -68,6 +69,7 @@ p_probearth =
         axis.title = element_blank(),
         legend.position = "none")
 
-savepath_p2 = str_c("./rplots/IPPModel02_EarthworkPredictDist.png")
-ggsave(savepath_p2, p_probearth, width = 4.45, height = 2.10,  units = "cm", dpi = 400, bg = 'white')
+savepath = str_c("./rplots/IPPModel02_EarthworkPredictDist.pdf")
+ggsave(savepath, p_probearth, width = 4.45, height = 2.10,  units = "cm", dpi = 400,
+       bg = 'transparent', device = cairo_pdf)
 dev.off()
