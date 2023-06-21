@@ -102,6 +102,6 @@ rm(samples)
 ## 1.3 Merge two plots into single #########################################################
 p_final = plot_grid(p_roads, p_trees, align = "vh", nrow = 1, labels="AUTO", label_size = 8)
 rm(p_roads, p_trees)
-savepath = str_c("./rplots/sm/FigS18_AccessibilityHistograms.png")
+savepath = str_c("./rplots/sm/FigS15_AccessibilityHistograms.png")
 ggsave(savepath, p_final, width = 12, height = 5.5,  units = c("cm"), dpi = 400, bg = 'white')
 dev.off()
