@@ -1,0 +1,469 @@
+type: generic
+title: 'Data from: Over 10,000 Pre-Columbian earthworks are still hidden throughout
+  Amazonia'
+authors:
+- family-names: Peripato
+  given-names: Vinicius
+- family-names: Levis
+  given-names: Carolina
+- family-names: Moreira
+  given-names: Guido A.
+- family-names: Gamerman
+  given-names: Dani
+- family-names: de Souza
+  given-names: Jonas G.
+- family-names: Iriarte
+  given-names: José
+- family-names: Robinson
+  given-names: Mark
+- family-names: ter Steege
+  given-names: Hans
+- family-names: Pitman
+  given-names: Nigel C.A.
+- family-names: Junqueira
+  given-names: André Braga
+- family-names: Trindade
+  given-names: Thiago B.
+- family-names: de Almeida
+  given-names: Fernando O.
+- family-names: de Paula Moraes
+  given-names: Claide
+- family-names: Lombardo
+  given-names: Umberto
+- family-names: Tamanaha
+  given-names: Eduardo K.
+- family-names: Maezumi
+  given-names: Shira Y.
+- family-names: Ometto
+  given-names: Jean P. H. B.
+- family-names: Braga
+  given-names: José R.G.
+- family-names: Campanharo
+  given-names: Wesley A.
+- family-names: Cassol
+  given-names: Henrique L. G.
+- family-names: Leal
+  given-names: Philipe R.
+- family-names: de Assis
+  given-names: Mauro L. R.
+- family-names: da Silva
+  given-names: Adriana M.
+- family-names: Phillips
+  given-names: Oliver L.
+- family-names: Costa
+  given-names: Flávia R.C.
+- family-names: Flores
+  given-names: Bernardo Monteiro
+- family-names: Hoffman
+  given-names: Bruce
+- family-names: Henkel
+  given-names: Terry W.
+- family-names: Umaña
+  given-names: Maria Natalia
+- family-names: Magnusson
+  given-names: William E.
+- family-names: Sandoval
+  given-names: Elvis H. Valderrama
+- family-names: Barlow
+  given-names: Jos
+- family-names: Milliken
+  given-names: William
+- family-names: Lopes
+  given-names: Maria Aparecida
+- family-names: Simon
+  given-names: Marcelo Fragomeni
+- family-names: van Andel
+  given-names: Tinde R.
+- family-names: Laurance
+  given-names: Susan G.W.
+- family-names: Laurance
+  given-names: William F.
+- family-names: Torres-Lezama
+  given-names: Armando
+- family-names: Assis
+  given-names: Rafael L.
+- family-names: Molino
+  given-names: Jean-François
+- family-names: Mestre
+  given-names: Mickaël
+- family-names: Hamblin
+  given-names: Michelle
+- family-names: de Souza Coelho
+  given-names: Luiz
+- family-names: de Andrade Lima Filho
+  given-names: Diogenes
+- family-names: Wittmann
+  given-names: Florian
+- family-names: Salomão
+  given-names: Rafael P.
+- family-names: Amaral
+  given-names: Iêda Leão
+- family-names: Guevara
+  given-names: Juan Ernesto
+- family-names: de Almeida Matos
+  given-names: Francisca Dionízia
+- family-names: Castilho
+  given-names: Carolina V.
+- family-names: de Jesus Veiga Carim
+  given-names: Marcelo
+- family-names: López
+  given-names: Dairon Cárdenas
+- family-names: Sabatier
+  given-names: Daniel
+- family-names: Irume
+  given-names: Mariana Victória
+- family-names: Martins
+  given-names: Maria Pires
+- family-names: da Silva Guimarães
+  given-names: José Renan
+- family-names: Bánki
+  given-names: Olaf S.
+- family-names: Piedade
+  given-names: Maria Teresa Fernandez
+- family-names: Ramos
+  given-names: José Ferreira
+- family-names: Luize
+  given-names: Bruno Garcia
+- family-names: de Leão Novo
+  given-names: Evlyn Márcia Moraes
+- family-names: Vargas
+  given-names: Percy Núñez
+- family-names: Silva
+  given-names: Thiago Sanna Freire
+- family-names: Venticinque
+  given-names: Eduardo Martins
+- family-names: Manzatto
+  given-names: Angelo Gilberto
+- family-names: Reis
+  given-names: Neidiane Farias Costa
+- family-names: Terborgh
+  given-names: John
+- family-names: Casula
+  given-names: Katia Regina
+- family-names: Demarchi
+  given-names: Layon O.
+- family-names: Coronado
+  given-names: Euridice N. Honorio
+- family-names: Mendoza
+  given-names: Abel Monteagudo
+- family-names: Montero
+  given-names: Juan Carlos
+- family-names: Schöngart
+  given-names: Jochen
+- family-names: Feldpausch
+  given-names: Ted R.
+- family-names: Quaresma
+  given-names: Adriano Costa
+- family-names: C.
+  given-names: Gerardo A. Aymard
+- family-names: Baraloto
+  given-names: Chris
+- family-names: Arboleda
+  given-names: Nicolás Castaño
+- family-names: Engel
+  given-names: Julien
+- family-names: Petronelli
+  given-names: Pascal
+- family-names: Zartman
+  given-names: Charles Eugene
+- family-names: Killeen
+  given-names: Timothy J.
+- family-names: Marimon
+  given-names: Beatriz S.
+- family-names: Marimon-Junior
+  given-names: Ben Hur
+- family-names: Schietti
+  given-names: Juliana
+- family-names: Sousa
+  given-names: Thaiane R.
+- family-names: Vasquez
+  given-names: Rodolfo
+- family-names: Rincón
+  given-names: Lorena M.
+- family-names: Berenguer
+  given-names: Erika
+- family-names: Ferreira
+  given-names: Joice
+- family-names: Mostacedo
+  given-names: Bonifacio
+- family-names: do Amaral
+  given-names: Dário Dantas
+- family-names: Castellanos
+  given-names: Hernán
+- family-names: de Medeiros
+  given-names: Marcelo Brilhante
+- family-names: Andrade
+  given-names: Ana
+- family-names: Camargo
+  given-names: José Luís
+- family-names: Rincón
+  given-names: Lorena Maniguaje
+- family-names: de Sousa Farias
+  given-names: Emanuelle
+- family-names: Magalhães
+  given-names: José Leonardo Lima
+- family-names: Nascimento
+  given-names: Henrique Eduardo Mendonça
+- family-names: de Queiroz
+  given-names: Helder Lima
+- family-names: Brienen
+  given-names: Roel
+- family-names: Revilla
+  given-names: Juan David Cardenas
+- family-names: Stevenson
+  given-names: Pablo R.
+- family-names: Araujo-Murakami
+  given-names: Alejandro
+- family-names: Cintra
+  given-names: Bruno Barçante Ladvocat
+- family-names: Feitosa
+  given-names: Yuri Oliveira
+- family-names: Barbosa
+  given-names: Flávia Rodrigues
+- family-names: de Sá Carpanedo
+  given-names: Rainiellen
+- family-names: Duivenvoorden
+  given-names: Joost F.
+- family-names: Noronha
+  given-names: Janaína Costa
+- family-names: de Jesus Rodrigues
+  given-names: Domingos
+- family-names: Mogollón
+  given-names: Hugo F.
+- family-names: Ferreira
+  given-names: Leandro Valle
+- family-names: Householder
+  given-names: John Ethan
+- family-names: Lozada
+  given-names: José Rafael
+- family-names: Comiskey
+  given-names: James A.
+- family-names: Draper
+  given-names: Freddie C.
+- family-names: de Toledo
+  given-names: José Julio
+- family-names: Damasco
+  given-names: Gabriel
+- family-names: Dávila
+  given-names: Nállarett
+- family-names: García-Villacorta
+  given-names: Roosevelt
+- family-names: Lopes
+  given-names: Aline
+- family-names: Valverde
+  given-names: Fernando Cornejo
+- family-names: Alonso
+  given-names: Alfonso
+- family-names: Dallmeier
+  given-names: Francisco
+- family-names: Gomes
+  given-names: Vitor H.F.
+- family-names: Jimenez
+  given-names: Eliana M.
+- family-names: Neill
+  given-names: David
+- family-names: Mora
+  given-names: Maria Cristina Peñuela
+- family-names: de Aguiar
+  given-names: Daniel P. P.
+- family-names: Arroyo
+  given-names: Luzmila
+- family-names: Carvalho
+  given-names: Fernanda Antunes
+- family-names: de Souza
+  given-names: Fernanda Coelho
+- family-names: Feeley
+  given-names: Kenneth J.
+- family-names: Gribel
+  given-names: Rogerio
+- family-names: Pansonato
+  given-names: Marcelo Petratti
+- family-names: Paredes
+  given-names: Marcos Ríos
+- family-names: da Silva
+  given-names: Izaias Brasil
+- family-names: Ferreira
+  given-names: Maria Julia
+- family-names: Fine
+  given-names: Paul V.A.
+- family-names: Fonty
+  given-names: Émile
+- family-names: Guedes
+  given-names: Marcelino Carneiro
+- family-names: Licona
+  given-names: Juan Carlos
+- family-names: Pennington
+  given-names: Toby
+- family-names: Peres
+  given-names: Carlos A.
+- family-names: Zegarra
+  given-names: Boris Eduardo Villa
+- family-names: Parada
+  given-names: Germaine Alexander
+- name: Guido
+- family-names: Vos
+  given-names: Vincent Antoine
+- family-names: Cerón
+  given-names: Carlos
+- family-names: Maas
+  given-names: Paul
+- family-names: Silveira
+  given-names: Marcos
+- family-names: Stropp
+  given-names: Juliana
+- family-names: Thomas
+  given-names: Raquel
+- family-names: Baker
+  given-names: Tim R.
+- family-names: Daly
+  given-names: Doug
+- family-names: Huamantupa-Chuquimaco
+  given-names: Isau
+- family-names: Vieira
+  given-names: Ima Célia Guimarães
+- family-names: Albuquerque
+  given-names: Bianca Weiss
+- family-names: Fuentes
+  given-names: Alfredo
+- family-names: Klitgaard
+  given-names: Bente
+- family-names: Pena
+  given-names: José Luis Marcelo
+- family-names: Silman
+  given-names: Miles R.
+- family-names: Tello
+  given-names: J. Sebastián
+- family-names: Vriesendorp
+  given-names: Corine
+- family-names: Chave
+  given-names: Jerome
+- family-names: Fiore
+  given-names: Anthony Di
+- family-names: Hilário
+  given-names: Renato Richard
+- family-names: Phillips
+  given-names: Juan Fernando
+- family-names: Rivas-Torres
+  given-names: Gonzalo
+- family-names: von Hildebrand
+  given-names: Patricio
+- family-names: de Oliveira Pereira
+  given-names: Luciana
+- family-names: Barbosa
+  given-names: Edelcilio Marques
+- family-names: de Matos Bonates
+  given-names: Luiz Carlos
+- family-names: Doza
+  given-names: Hilda Paulette Dávila
+- family-names: Gómez
+  given-names: Ricardo Zárate
+- family-names: Gonzales
+  given-names: George Pepe Gallardo
+- family-names: Gonzales
+  given-names: Therany
+- family-names: Malhi
+  given-names: Yadvinder
+- family-names: de Andrade Miranda
+  given-names: Ires Paula
+- family-names: Pinto
+  given-names: Linder Felipe Mozombite
+- family-names: Prieto
+  given-names: Adriana
+- family-names: Rudas
+  given-names: Agustín
+- family-names: Ruschel
+  given-names: Ademir R.
+- family-names: Silva
+  given-names: Natalino
+- family-names: Vela
+  given-names: César I.A.
+- family-names: Zent
+  given-names: Egleé L.
+- family-names: Zent
+  given-names: Stanford
+- family-names: Cano
+  given-names: Angela
+- family-names: Márquez
+  given-names: Yrma Andreina Carrero
+- family-names: Correa
+  given-names: Diego F.
+- family-names: Costa
+  given-names: Janaina Barbosa Pedrosa
+- family-names: Galbraith
+  given-names: David
+- family-names: Holmgren
+  given-names: Milena
+- family-names: Kalamandeen
+  given-names: Michelle
+- family-names: Lobo
+  given-names: Guilherme
+- family-names: Nascimento
+  given-names: Marcelo Trindade
+- family-names: Oliveira
+  given-names: Alexandre A.
+- family-names: Ramirez-Angulo
+  given-names: Hirma
+- family-names: Rocha
+  given-names: Maira
+- family-names: Scudeller
+  given-names: Veridiana Vizoni
+- family-names: Sierra
+  given-names: Rodrigo
+- family-names: Tirado
+  given-names: Milton
+- family-names: van der Heijden
+  given-names: Geertje
+- family-names: Torre
+  given-names: Emilio Vilanova
+- family-names: Reategui
+  given-names: Manuel Augusto Ahuite
+- family-names: Baider
+  given-names: Cláudia
+- family-names: Balslev
+  given-names: Henrik
+- family-names: Cárdenas
+  given-names: Sasha
+- family-names: Casas
+  given-names: Luisa Fernanda
+- family-names: Farfan-Rios
+  given-names: William
+- family-names: Ferreira
+  given-names: Cid
+- family-names: Linares-Palomino
+  given-names: Reynaldo
+- family-names: Mendoza
+  given-names: Casimiro
+- family-names: Mesones
+  given-names: Italo
+- family-names: Giraldo
+  given-names: Ligia Estela Urrego
+- family-names: Villarroel
+  given-names: Daniel
+- family-names: Zagt
+  given-names: Roderick
+- family-names: Alexiades
+  given-names: Miguel N.
+- family-names: de Oliveira
+  given-names: Edmar Almeida
+- family-names: Garcia-Cabrera
+  given-names: Karina
+- family-names: Hernandez
+  given-names: Lionel
+- family-names: Cuenca
+  given-names: Walter Palacios
+- family-names: Pansini
+  given-names: Susamar
+- family-names: Pauletto
+  given-names: Daniela
+- family-names: Arevalo
+  given-names: Freddy Ramirez
+- family-names: Sampaio
+  given-names: Adeilza Felipe
+- family-names: Gamarra
+  given-names: Luis Valenzuela
+- family-names: Aragão
+  given-names: Luiz E. O. C.
+url: https://doi.org/10.5281/zenodo.7750986
+year: '2023'
+publisher:
+  name: Zenodo repository
