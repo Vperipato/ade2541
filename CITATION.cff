@@ -993,7 +993,7 @@ authors:
   affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
     Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
     Brazil.
-url: https://doi.org/10.5281/zenodo.7750986
+url: https://doi.org/10.5281/zenodo.7750985
+doi: 10.5281/zenodo.7750985
 year: '2023'
-publisher:
-  name: Zenodo repository
+repository: Zenodo
