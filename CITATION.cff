@@ -1,1000 +1,469 @@
-cff-version: 1.2.0
-message: "If you use this dataset, please cite it as below."
-abstract: This set of data and R computer codes were used to create the predictive model, figures, and develop analysis on the manuscript "Over 10,000 Pre-Columbian earthworks are still hidden throughout Amazonia" submitted to Science journal as a research article (DOI: ...ade2541). Please read the materials and methods sections on the manuscript supplementary materials, along with the data provided in the "Database" folder, to ensure reproducibility.
+type: generic
+title: 'Data from: Over 10,000 Pre-Columbian earthworks are still hidden throughout
+  Amazonia'
 authors:
 - family-names: Peripato
   given-names: Vinicius
-  orcid: https://orcid.org/0000-0002-3137-211X
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE), Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010, Brazil.
 - family-names: Levis
   given-names: Carolina
-  orcid: https://orcid.org/0000-0002-8425-9479
-  affiliation: Postgraduate Program in Ecology, Federal University of Santa Catarina,
-    R. Eng. Agronômico Andrei Cristian Ferreira., Trindade, Florianópolis, SC, 88040-900,
-    Brazil.
 - family-names: Moreira
   given-names: Guido A.
-  orcid: https://orcid.org/0000-0001-7557-0874
-  affiliation: Centre of Molecular and Environmental Biology, Universidade do Minho,
-    Braga, Portugal.
 - family-names: Gamerman
   given-names: Dani
-  orcid: https://orcid.org/0000-0003-0697-4589
-  affiliation: Departamento de Métodos Estatísticos, Universidade Federal do Rio de
-    Janeiro, Rio de Janeiro, RJ, Brazil.
-- family-names: Steege
-  given-names: Hans ter
-  orcid: https://orcid.org/0000-0002-8155-5360
-  affiliation: Department of Archaeology, College of Humanities, University of Exeter,
-    Exeter, UK.
-- family-names: Pitman
-  given-names: Nigel C.A.
-  orcid: https://orcid.org/0000-0002-1520-8459
-  affiliation: Department of Archaeology, College of Humanities, University of Exeter,
-    Exeter, UK.
-- family-names: Souza
-  given-names: Jonas G. de
-  orcid: https://orcid.org/0000-0002-8738-2659
-  affiliation: Naturalis Biodiversity Center, PO Box 9517, Leiden, 2300 RA, The Netherlands.
+- family-names: de Souza
+  given-names: Jonas G.
 - family-names: Iriarte
   given-names: José
-  orcid: https://orcid.org/0000-0002-9211-2880
-  affiliation: Science and Education, The Field Museum, 1400 S. Lake Shore Drive,
-    Chicago, IL, 60605-2496, USA.
 - family-names: Robinson
   given-names: Mark
-  orcid: https://orcid.org/0000-0001-6032-4443
-  affiliation: Department of Humanities, Universitat Pompeu Fabra, Barcelona, Spain.
+- family-names: ter Steege
+  given-names: Hans
+- family-names: Pitman
+  given-names: Nigel C.A.
 - family-names: Junqueira
   given-names: André Braga
-  orcid: https://orcid.org/0000-0003-3681-1705
-  affiliation: Institut de Ciència i Tecnologia Ambientals, Universitat Autònoma de
-    Barcelona, 08193 Bellaterra, Barcelona, Spain.
 - family-names: Trindade
   given-names: Thiago B.
-  affiliation: Instituto do Património Histórico e Artístico Nacional, Centro Nacional
-    de Arqueologia, Brasília, DF, Brazil.
-- family-names: Almeida
-  given-names: Fernando O. de
-  affiliation: Departamento de Arqueologia, Universidade Federal de Sergipe, Laranjeiras,
-    SE, Brazil.
-- family-names: Moraes
-  given-names: Claide de Paula
-  orcid: https://orcid.org/0000-0002-3562-0029
-  affiliation: Universidade Federal do Oeste do Pará, Santarém, PA, Brazil.
+- family-names: de Almeida
+  given-names: Fernando O.
+- family-names: de Paula Moraes
+  given-names: Claide
 - family-names: Lombardo
   given-names: Umberto
-  orcid: https://orcid.org/0000-0002-0001-4870
-  affiliation: Geographisches Institut, University of Bern, Bern, Switzerland.
 - family-names: Tamanaha
   given-names: Eduardo K.
-  affiliation: Instituto de Desenvolvimento Sustentável Mamirauá, Tefé, AM, Brazil.
 - family-names: Maezumi
   given-names: Shira Y.
-  orcid: https://orcid.org/0000-0002-4333-1972
-  affiliation: Department of Archaeology, Max Planck Institute of Geoanthropology,
-    Jena, Germany.
 - family-names: Ometto
   given-names: Jean P. H. B.
-  orcid: https://orcid.org/0000-0002-4221-1039
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
 - family-names: Braga
   given-names: José R.G.
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
 - family-names: Campanharo
   given-names: Wesley A.
-  orcid: https://orcid.org/0000-0001-5719-8407
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
 - family-names: Cassol
   given-names: Henrique L. G.
-  orcid: https://orcid.org/0000-0001-6728-4712
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
 - family-names: Leal
   given-names: Philipe R.
-  orcid: https://orcid.org/0000-0001-8438-7561
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
-- family-names: Assis
-  given-names: Mauro L. R. de
-  orcid: https://orcid.org/0000-0002-2455-0299
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
-- family-names: Silva
-  given-names: Adriana M. da
-  affiliation: Postgraduate Program in Geography, Institute of Geography, Federal
-    University of Uberlândia (UFU), Av. João Naves de Ávila, 2121, Santa Mônica, Uberlândia,
-    MG, 38.408-100, Brazil.
+- family-names: de Assis
+  given-names: Mauro L. R.
+- family-names: da Silva
+  given-names: Adriana M.
 - family-names: Phillips
   given-names: Oliver L.
-  affiliation: School of Geography, University of Leeds, Woodhouse Lane, Leeds, LS2
-    9JT, UK.
 - family-names: Costa
   given-names: Flávia R.C.
-  affiliation: Coordenação de Pesquisas em Ecologia, Instituto Nacional de Pesquisas
-    da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375,
-    Brazil.
 - family-names: Flores
   given-names: Bernardo Monteiro
-  affiliation: Graduate Program in Ecology, Federal University of Santa Catarina (UFSC),
-    Campus Universitário - Córrego Grande, Florianópolis, SC, 88040-900, Brazil.
 - family-names: Hoffman
   given-names: Bruce
-  orcid: https://orcid.org/0000-0003-4847-5163
-  affiliation: Amazon Conservation Team, 4211 North Fairfax Drive, Arlington, VA,
-    22203, USA.
 - family-names: Henkel
   given-names: Terry W.
-  affiliation: Department of Biological Sciences, Humboldt State University, 1 Harpst
-    Street, Arcata, CA, 95521, USA.
 - family-names: Umaña
   given-names: Maria Natalia
-  affiliation: Department of Ecology and Evolutionary Biology, University of Michigan,
-    Ann Arbor, MI, 48109, USA.
 - family-names: Magnusson
   given-names: William E.
-  orcid: https://orcid.org/0000-0003-1988-3950
-  affiliation: Coordenação de Pesquisas em Ecologia, Instituto Nacional de Pesquisas
-    da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375,
-    Brazil.
 - family-names: Sandoval
   given-names: Elvis H. Valderrama
-  affiliation: Department of Biology, University of Missouri, St. Louis, MO, 63121,
-    USA.
 - family-names: Barlow
   given-names: Jos
-  affiliation: Lancaster Environment Centre, Lancaster University, Lancaster, Lancashire,
-    LA1 4YQ, UK.
 - family-names: Milliken
   given-names: William
-  orcid: https://orcid.org/0000-0002-3926-6661
-  affiliation: Department for Ecosystem Stewardship, Royal Botanic Gardens, Kew, Richmond,
-    Surrey, TW9 3AE, UK.
 - family-names: Lopes
   given-names: Maria Aparecida
-  affiliation: Instituto de Ciências Biológicas, Universidade Federal do Pará, Av.
-    Augusto Corrêa 01, Belém, PA, 66075-110, Brazil.
 - family-names: Simon
   given-names: Marcelo Fragomeni
-  affiliation: Embrapa Recursos Genéticos e Biotecnologia, Parque Estação Biológica,
-    Prédio da Botânica e Ecologia, Brasilia, DF, 70770-917, Brazil.
-- family-names: Andel
-  given-names: Tinde R. van
-  orcid: https://orcid.org/0000-0002-4951-1894
-  affiliation: Naturalis Biodiversity Center, PO Box 9517, Leiden, 2300 RA, The Netherlands.
+- family-names: van Andel
+  given-names: Tinde R.
 - family-names: Laurance
   given-names: Susan G.W.
-  orcid: https://orcid.org/0000-0002-2831-2933
-  affiliation: Centre for Tropical Environmental and Sustainability Science and College
-    of Science and Engineering, James Cook University, Cairns, Queensland, 4870, Australia.
 - family-names: Laurance
   given-names: William F.
-  orcid: https://orcid.org/0000-0003-4430-9408
-  affiliation: Centre for Tropical Environmental and Sustainability Science and College
-    of Science and Engineering, James Cook University, Cairns, Queensland, 4870, Australia.
 - family-names: Torres-Lezama
   given-names: Armando
-  affiliation: Instituto de Investigaciones para el Desarrollo Forestal (INDEFOR),
-    Universidad de los Andes, Conjunto Forestal, 5101, Mérida, Mérida, Venezuela.
 - family-names: Assis
   given-names: Rafael L.
-  affiliation: Natural History Museum, University of Oslo, Postboks 1172, Oslo, 318,
-    Norway.
 - family-names: Molino
   given-names: Jean-François
-  orcid: https://orcid.org/0000-0001-8853-7133
-  affiliation: AMAP, IRD, Cirad, CNRS, INRAE, Université de Montpellier, Montpellier,
-    F-34398, France.
 - family-names: Mestre
   given-names: Mickaël
-  affiliation: Institut National de Recherches Archéologiques Préventives, Bègles,
-    France.
 - family-names: Hamblin
   given-names: Michelle
-  affiliation: Direction des Affaires Culturelles - Guyane, Cayenne, French Guiana.
-- family-names: Coelho
-  given-names: Luiz de Souza
-  orcid: https://orcid.org/0000-0001-6710-7660
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
-- family-names: Filho
-  given-names: Diogenes de Andrade Lima
-  orcid: https://orcid.org/0000-0001-7729-9790
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
+- family-names: de Souza Coelho
+  given-names: Luiz
+- family-names: de Andrade Lima Filho
+  given-names: Diogenes
 - family-names: Wittmann
   given-names: Florian
-  affiliation: Wetland Department, Institute of Geography and Geoecology, Karlsruhe
-    Institute of Technology - KIT, Josefstr.1, Rastatt, D-76437, Germany.
 - family-names: Salomão
   given-names: Rafael P.
-  orcid: https://orcid.org/0000-0003-0947-0132
-  affiliation: Programa Professor Visitante Nacional Sênior na Amazônia - CAPES, Universidade
-    Federal Rural da Amazônia, Av. Perimetral, s/n, Belém, PA, Brazil.
 - family-names: Amaral
   given-names: Iêda Leão
-  orcid: https://orcid.org/0000-0002-2645-4380
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Guevara
   given-names: Juan Ernesto
-  orcid: https://orcid.org/0000-0002-5433-6218
-  affiliation: Grupo de Investigación en Biodiversidad, Medio Ambiente y Salud-BIOMAS,
-    Universidad de las Américas, Campus Queri, Quito, Ecuador.
-- family-names: Matos
-  given-names: Francisca Dionízia de Almeida
-  orcid: https://orcid.org/0000-0002-3030-8968
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
+- family-names: de Almeida Matos
+  given-names: Francisca Dionízia
 - family-names: Castilho
   given-names: Carolina V.
-  orcid: https://orcid.org/0000-0002-1064-2758
-  affiliation: Centro de Pesquisa Agroflorestal de Roraima, Embrapa Roraima, BR 174,
-    km 8 ? Distrito Industrial, Boa Vista, RR, 69301-970, Brazil.
-- family-names: Carim
-  given-names: Marcelo de Jesus Veiga
-  affiliation: Departamento de Botânica, Instituto de Pesquisas Científicas e Tecnológicas
-    do Amapá - IEPA, Rodovia JK, Km 10, Campus do IEPA da Fazendinha, Macapá, AP,
-    68901-025, Brazil.
+- family-names: de Jesus Veiga Carim
+  given-names: Marcelo
 - family-names: López
   given-names: Dairon Cárdenas
-  affiliation: Herbario Amazónico Colombiano, Instituto SINCHI, Calle 20 No 5-44,
-    Bogotá, DC, Colombia.
 - family-names: Sabatier
   given-names: Daniel
-  affiliation: AMAP, IRD, Cirad, CNRS, INRAE, Université de Montpellier, Montpellier,
-    F-34398, France.
 - family-names: Irume
   given-names: Mariana Victória
-  orcid: https://orcid.org/0000-0002-1590-3013
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Martins
   given-names: Maria Pires
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
-- family-names: Guimarães
-  given-names: José Renan da Silva
-  affiliation: Amcel Amapá Florestal e Celulose S.A, Rua Claudio Lucio - S/N, Novo
-    Horizonte, Santana, AP, 68927-003, Brazil.
+- family-names: da Silva Guimarães
+  given-names: José Renan
 - family-names: Bánki
   given-names: Olaf S.
-  affiliation: Naturalis Biodiversity Center, PO Box 9517, Leiden, 2300 RA, The Netherlands.
 - family-names: Piedade
   given-names: Maria Teresa Fernandez
-  orcid: https://orcid.org/0000-0002-7320-0498
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Ramos
   given-names: José Ferreira
-  orcid: https://orcid.org/0000-0002-1580-3370
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Luize
   given-names: Bruno Garcia
-  orcid: https://orcid.org/0000-0002-8384-8386
-  affiliation: Departamento de Biologia Vegetal, Instituto de Biologia, Universidade
-    Estadual de Campinas ? UNICAMP, CP 6109, Campinas, SP, 13083-970, Brazil.
-- family-names: Novo
-  given-names: Evlyn Márcia Moraes de Leão
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
+- family-names: de Leão Novo
+  given-names: Evlyn Márcia Moraes
 - family-names: Vargas
   given-names: Percy Núñez
-  affiliation: Herbario Vargas, Universidad Nacional de San Antonio Abad del Cusco,
-    Avenida de la Cultura, Nro 733, Cusco, Cuzco, Peru.
 - family-names: Silva
   given-names: Thiago Sanna Freire
-  affiliation: Biological and Environmental Sciences, University of Stirling, Stirling,
-    FK9 4LA, UK.
 - family-names: Venticinque
   given-names: Eduardo Martins
-  affiliation: Centro de Biociências, Departamento de Ecologia, Universidade Federal
-    do Rio Grande do Norte, Av. Senador Salgado Filho, 3000 , Natal, RN, 59072-970,
-    Brazil.
 - family-names: Manzatto
   given-names: Angelo Gilberto
-  affiliation: Departamento de Biologia, Universidade Federal de Rondônia, Rodovia
-    BR 364 s/n Km 9,5 - Sentido Acre, Unir, Porto Velho, RO, 76.824-027, Brazil.
 - family-names: Reis
   given-names: Neidiane Farias Costa
-  affiliation: Programa de Pós- Graduação em Biodiversidade e Biotecnologia PPG- Bionorte,
-    Universidade Federal de Rondônia, Campus Porto Velho Km 9,5 bairro Rural, Porto
-    Velho, RO, 76.824-027, Brazil.
 - family-names: Terborgh
   given-names: John
-  affiliation: Department of Biology and Florida Museum of Natural History, University
-    of Florida, Gainesville, FL, 32611, USA.
 - family-names: Casula
   given-names: Katia Regina
-  affiliation: Programa de Pós- Graduação em Biodiversidade e Biotecnologia PPG- Bionorte,
-    Universidade Federal de Rondônia, Campus Porto Velho Km 9,5 bairro Rural, Porto
-    Velho, RO, 76.824-027, Brazil.
 - family-names: Demarchi
   given-names: Layon O.
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Coronado
   given-names: Euridice N. Honorio
-  affiliation: Instituto de Investigaciones de la Amazonía Peruana (IIAP), Av. A.
-    Quiñones km 2,5, Iquitos, Loreto, 784, Peru.
 - family-names: Mendoza
   given-names: Abel Monteagudo
-  affiliation: Herbario Vargas, Universidad Nacional de San Antonio Abad del Cusco,
-    Avenida de la Cultura, Nro 733, Cusco, Cuzco, Peru.
 - family-names: Montero
   given-names: Juan Carlos
-  affiliation: 'Instituto Boliviano de Investigacion Forestal, Av. 6 de agosto #28,
-    Km. 14, Doble via La Guardia, Casilla 6204, Santa Cruz, Santa Cruz, Bolivia.'
 - family-names: Schöngart
   given-names: Jochen
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Feldpausch
   given-names: Ted R.
-  affiliation: Geography, College of Life and Environmental Sciences, University of
-    Exeter, Rennes Drive, Exeter, EX4 4RJ, UK.
 - family-names: Quaresma
   given-names: Adriano Costa
-  affiliation: Wetland Department, Institute of Geography and Geoecology, Karlsruhe
-    Institute of Technology - KIT, Josefstr.1, Rastatt, D-76437, Germany.
 - family-names: C.
   given-names: Gerardo A. Aymard
-  affiliation: Programa de Ciencias del Agro y el Mar, Herbario Universitario (PORT),
-    UNELLEZ-Guanare, Guanare, Portuguesa, 3350, Venezuela.
 - family-names: Baraloto
   given-names: Chris
-  affiliation: International Center for Tropical Botany (ICTB) Department of Biological
-    Sciences, Florida International University, 11200 SW 8th Street, OE 243, Miami,
-    FL, 33199, USA.
 - family-names: Arboleda
   given-names: Nicolás Castaño
-  affiliation: Herbario Amazónico Colombiano, Instituto SINCHI, Calle 20 No 5-44,
-    Bogotá, DC, Colombia.
 - family-names: Engel
   given-names: Julien
-  affiliation: AMAP, IRD, Cirad, CNRS, INRAE, Université de Montpellier, Montpellier,
-    F-34398, France.
 - family-names: Petronelli
   given-names: Pascal
-  affiliation: Cirad UMR Ecofog, AgrosParisTech,CNRS,INRAE,Univ Guyane, Campus agronomique,
-    Kourou Cedex, 97379, France.
 - family-names: Zartman
   given-names: Charles Eugene
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Killeen
   given-names: Timothy J.
-  affiliation: Agteca-Amazonica, Santa Cruz, Bolivia.
 - family-names: Marimon
   given-names: Beatriz S.
-  affiliation: Programa de Pós-Graduação em Ecologia e Conservação, Universidade do
-    Estado de Mato Grosso, Nova Xavantina, MT, Brazil.
 - family-names: Marimon-Junior
   given-names: Ben Hur
-  affiliation: Programa de Pós-Graduação em Ecologia e Conservação, Universidade do
-    Estado de Mato Grosso, Nova Xavantina, MT, Brazil.
 - family-names: Schietti
   given-names: Juliana
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Sousa
   given-names: Thaiane R.
-  affiliation: Programa de Pós-Graduação em Ecologia, Instituto Nacional de Pesquisas
-    da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375,
-    Brazil.
 - family-names: Vasquez
   given-names: Rodolfo
-  affiliation: Jardín Botánico de Missouri, Oxapampa, Pasco, Peru.
 - family-names: Rincón
   given-names: Lorena M.
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Berenguer
   given-names: Erika
-  affiliation: Environmental Change Institute, University of Oxford, Oxford, Oxfordshire,
-    OX1 3QY, UK.
 - family-names: Ferreira
   given-names: Joice
-  affiliation: Empresa Brasileira de Pesquisa Agropecuária, Embrapa Amazônia Oriental,
-    Trav. Dr. Enéas Pinheiro s/nº, Belém, PA, 66095-903, Brazil.
 - family-names: Mostacedo
   given-names: Bonifacio
-  affiliation: Facultad de Ciencias Agrícolas, Universidad Autónoma Gabriel René Moreno,
-    Santa Cruz, Santa Cruz, Bolivia.
-- family-names: Amaral
-  given-names: Dário Dantas do
-  affiliation: Coordenação de Botânica, Museu Paraense Emílio Goeldi, Av. Magalhães
-    Barata 376, C.P. 399, Belém, PA, 66040-170, Brazil.
+- family-names: do Amaral
+  given-names: Dário Dantas
 - family-names: Castellanos
   given-names: Hernán
-  affiliation: Centro de Investigaciones Ecológicas de Guayana, Universidad Nacional
-    Experimental de Guayana, Calle Chile, urbaniz Chilemex, Puerto Ordaz, Bolivar,
-    Venezuela.
-- family-names: Medeiros
-  given-names: Marcelo Brilhante de
-  affiliation: Embrapa Recursos Genéticos e Biotecnologia, Parque Estação Biológica,
-    Prédio da Botânica e Ecologia, Brasilia, DF, 70770-917, Brazil.
+- family-names: de Medeiros
+  given-names: Marcelo Brilhante
 - family-names: Andrade
   given-names: Ana
-  affiliation: Projeto Dinâmica Biológica de Fragmentos Florestais, Instituto Nacional
-    de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM,
-    69067-375, Brazil.
 - family-names: Camargo
   given-names: José Luís
-  affiliation: Projeto Dinâmica Biológica de Fragmentos Florestais, Instituto Nacional
-    de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM,
-    69067-375, Brazil.
 - family-names: Rincón
   given-names: Lorena Maniguaje
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
-- family-names: Farias
-  given-names: Emanuelle de Sousa
-  affiliation: Laboratório de Ecologia de Doenças Transmissíveis da Amazônia (EDTA),
-    Instituto Leônidas e Maria Deane, Fiocruz, Rua Terezina, 476, Adrianópolis, Manaus,
-    AM, 69060-001, Brazil.
+- family-names: de Sousa Farias
+  given-names: Emanuelle
 - family-names: Magalhães
   given-names: José Leonardo Lima
-  affiliation: Programa de Pós-Graduação em Ecologia, Universidade Federal do Pará,
-    Av. Augusto Corrêa 01, Belém, PA, 66075-110, Brazil.
 - family-names: Nascimento
   given-names: Henrique Eduardo Mendonça
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
-- family-names: Queiroz
-  given-names: Helder Lima de
-  affiliation: Diretoria Técnico-Científica, Instituto de Desenvolvimento Sustentável
-    Mamirauá, Estrada do Bexiga, 2584, Tefé, AM, 69470-000, Brazil.
+- family-names: de Queiroz
+  given-names: Helder Lima
 - family-names: Brienen
   given-names: Roel
-  affiliation: School of Geography, University of Leeds, Woodhouse Lane, Leeds, LS2
-    9JT, UK.
 - family-names: Revilla
   given-names: Juan David Cardenas
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Stevenson
   given-names: Pablo R.
-  affiliation: 'Laboratorio de Ecología de Bosques Tropicales y Primatología, Universidad
-    de los Andes, Carrera 1 # 18a- 10, Bogotá, DC, 111711, Colombia.'
 - family-names: Araujo-Murakami
   given-names: Alejandro
-  affiliation: Museo de Historia Natural Noel Kempff Mercado, Universidad Autónoma
-    Gabriel Rene Moreno, Avenida Irala 565 Casilla Post al 2489, Santa Cruz, Santa
-    Cruz, Bolivia.
 - family-names: Cintra
   given-names: Bruno Barçante Ladvocat
-  affiliation: Instituto de Biociências - Dept. Botanica, Universidade de Sao Paulo
-    - USP, Rua do Matão 277, Cidade Universitária, São Paulo, SP, 05508-090, Brazil.
 - family-names: Feitosa
   given-names: Yuri Oliveira
-  affiliation: Programa de Pós-Graduação em Biologia (Botânica), Instituto Nacional
-    de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM,
-    69067-375, Brazil.
 - family-names: Barbosa
   given-names: Flávia Rodrigues
-  affiliation: ICNHS, Federal University of Mato Grosso, Av. Alexandre Ferronato 1200,
-    Setor Industrial, Sinop, MT, 78.557-267, Brazil.
-- family-names: Carpanedo
-  given-names: Rainiellen de Sá
-  affiliation: ICNHS, Federal University of Mato Grosso, Av. Alexandre Ferronato 1200,
-    Setor Industrial, Sinop, MT, 78.557-267, Brazil.
+- family-names: de Sá Carpanedo
+  given-names: Rainiellen
 - family-names: Duivenvoorden
   given-names: Joost F.
-  affiliation: Institute of Biodiversity and Ecosystem Dynamics, University of Amsterdam,
-    Sciencepark 904, Amsterdam, 1098 XH, The Netherlands.
 - family-names: Noronha
   given-names: Janaína Costa
-  affiliation: ICNHS, Federal University of Mato Grosso, Av. Alexandre Ferronato 1200,
-    Setor Industrial, Sinop, MT, 78.557-267, Brazil.
-- family-names: Rodrigues
-  given-names: Domingos de Jesus
-  affiliation: ICNHS, Federal University of Mato Grosso, Av. Alexandre Ferronato 1200,
-    Setor Industrial, Sinop, MT, 78.557-267, Brazil.
+- family-names: de Jesus Rodrigues
+  given-names: Domingos
 - family-names: Mogollón
   given-names: Hugo F.
-  affiliation: Endangered Species Coalition, 8530 Geren Rd., Silver Spring, MD, 20901,
-    USA.
 - family-names: Ferreira
   given-names: Leandro Valle
-  affiliation: Coordenação de Botânica, Museu Paraense Emílio Goeldi, Av. Magalhães
-    Barata 376, C.P. 399, Belém, PA, 66040-170, Brazil.
 - family-names: Householder
   given-names: John Ethan
-  affiliation: Wetland Department, Institute of Geography and Geoecology, Karlsruhe
-    Institute of Technology - KIT, Josefstr.1, Rastatt, D-76437, Germany.
 - family-names: Lozada
   given-names: José Rafael
-  affiliation: Facultad de Ciencias Forestales y Ambientales, Instituto de Investigaciones
-    para el Desarrollo Forestal, Universidad de los Andes, Via Chorros de Milla, 5101,
-    Mérida, Mérida, Venezuela.
 - family-names: Comiskey
   given-names: James A.
-  affiliation: Inventory and Monitoring Program, National Park Service, 120 Chatham
-    Lane, Fredericksburg, VA, 22405, USA.
 - family-names: Draper
   given-names: Freddie C.
-  affiliation: Department of Geography and Planning, University of Liverpool, Liverpool,
-    L69 3BX, UK.
-- family-names: Toledo
-  given-names: José Julio de
-  affiliation: Universidade Federal do Amapá, Ciências Ambientais, Rod. Juscelino
-    Kubitschek km2, Macapá, AP, 68902-280, Brazil.
+- family-names: de Toledo
+  given-names: José Julio
 - family-names: Damasco
   given-names: Gabriel
-  affiliation: Gothenburg Global Biodiversity Centre, University of Gothenburg, Carl
-    Skottbergs gata 22b, Gothenburg, 413 19, Sweden.
 - family-names: Dávila
   given-names: Nállarett
-  affiliation: Departamento de Biologia Vegetal, Instituto de Biologia, Universidade
-    Estadual de Campinas ? UNICAMP, CP 6109, Campinas, SP, 13083-970, Brazil.
 - family-names: García-Villacorta
   given-names: Roosevelt
-  affiliation: Programa Restauración de Ecosistemas (PRE), Centro de Innovación Científica
-    Amazónica (CINCIA), Jr. Cajamarca Cdra. 1 s/n, Tambopata, Madre de Dios, Peru.
 - family-names: Lopes
   given-names: Aline
-  affiliation: Department of Ecology, Institute of Biological Sciences, University
-    of Brasilia, Brasilia, DF, 70904-970, Brazil.
 - family-names: Valverde
   given-names: Fernando Cornejo
-  affiliation: Andes to Amazon Biodiversity Program, Madre de Dios, Madre de Dios,
-    Peru.
 - family-names: Alonso
   given-names: Alfonso
-  affiliation: Center for Conservation and Sustainability, Smithsonian Conservation
-    Biology Institute, 1100 Jefferson Dr. SW, Suite 3123, Washington, DC, 20560-0705,
-    USA.
 - family-names: Dallmeier
   given-names: Francisco
-  affiliation: Center for Conservation and Sustainability, Smithsonian Conservation
-    Biology Institute, 1100 Jefferson Dr. SW, Suite 3123, Washington, DC, 20560-0705,
-    USA.
 - family-names: Gomes
   given-names: Vitor H.F.
-  affiliation: Escola de Negócios Tecnologia e Inovação, Centro Universitário do Pará,
-    Belém, PA, Brazil.
 - family-names: Jimenez
   given-names: Eliana M.
-  affiliation: Grupo de Ecología y Conservación de Fauna y Flora Silvestre, Instituto
-    Amazónico de Investigaciones Imani, Universidad Nacional de Colombia sede Amazonia,
-    Leticia, Amazonas, Colombia.
 - family-names: Neill
   given-names: David
-  affiliation: Universidad Estatal Amazónica, Puyo, Pastaza, Ecuador.
 - family-names: Mora
   given-names: Maria Cristina Peñuela
-  affiliation: Universidad Regional Amazónica IKIAM, Km 7 via Muyuna, Tena, Napo,
-    Ecuador.
-- family-names: Aguiar
-  given-names: Daniel P. P. de
-  affiliation: Procuradoria-Geral de Justiça, Ministério Público do Estado do Amazonas,
-    Av. Coronel Teixeira, 7995, Manaus, AM, 69037-473, Brazil.
+- family-names: de Aguiar
+  given-names: Daniel P. P.
 - family-names: Arroyo
   given-names: Luzmila
-  affiliation: Museo de Historia Natural Noel Kempff Mercado, Universidad Autónoma
-    Gabriel Rene Moreno, Avenida Irala 565 Casilla Post al 2489, Santa Cruz, Santa
-    Cruz, Bolivia.
 - family-names: Carvalho
   given-names: Fernanda Antunes
-  affiliation: Coordenação de Pesquisas em Ecologia, Instituto Nacional de Pesquisas
-    da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375,
-    Brazil.
-- family-names: Souza
-  given-names: Fernanda Coelho de
-  affiliation: Coordenação de Pesquisas em Ecologia, Instituto Nacional de Pesquisas
-    da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375,
-    Brazil.
+- family-names: de Souza
+  given-names: Fernanda Coelho
 - family-names: Feeley
   given-names: Kenneth J.
-  affiliation: Department of Biology, University of Miami, Coral Gables, FL, 33146,
-    USA.
 - family-names: Gribel
   given-names: Rogerio
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Pansonato
   given-names: Marcelo Petratti
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Paredes
   given-names: Marcos Ríos
-  affiliation: Servicios de Biodiversidad EIRL, Jr. Independencia 405, Iquitos, Loreto,
-    784, Peru.
-- family-names: Silva
-  given-names: Izaias Brasil da
-  affiliation: Postgraduate program in Biodiversity and Biotechnology ? Bionorte,
-    Federal University of Acre, Rodovia 364, km 4.5, Distrito industrial, Rio Branco,
-    AC, 69900-000, Brazil.
+- family-names: da Silva
+  given-names: Izaias Brasil
 - family-names: Ferreira
   given-names: Maria Julia
-  affiliation: Postgraduate program in Ethnobiology and Nature Conservation, Federal
-    Rural University of Pernambuco (UFRPE), Rua Dom Manuel de Medeiros, s/n, Dois
-    Irmãos, Pernambuco, PB, 52171-900, Brazil.
 - family-names: Fine
   given-names: Paul V.A.
-  affiliation: Department of Integrative Biology, University of California, Berkeley,
-    CA, 94720-3140, USA.
 - family-names: Fonty
   given-names: Émile
-  affiliation: Direction régionale de la Guyane, Office national des forêts, Cayenne,
-    F-97300, French Guiana.
 - family-names: Guedes
   given-names: Marcelino Carneiro
-  affiliation: Empresa Brasileira de Pesquisa Agropecuária, Embrapa Amapá, Rod. Juscelino
-    Kubitschek km 5, Macapá, AP, 68903-419, Brazil.
 - family-names: Licona
   given-names: Juan Carlos
-  affiliation: 'Instituto Boliviano de Investigacion Forestal, Av. 6 de agosto #28,
-    Km. 14, Doble via La Guardia, Casilla 6204, Santa Cruz, Santa Cruz, Bolivia.'
 - family-names: Pennington
   given-names: Toby
-  affiliation: Geography, College of Life and Environmental Sciences, University of
-    Exeter, Rennes Drive, Exeter, EX4 4RJ, UK.
 - family-names: Peres
   given-names: Carlos A.
-  affiliation: School of Environmental Sciences, University of East Anglia, Norwich,
-    NR4 7TJ, UK.
 - family-names: Zegarra
   given-names: Boris Eduardo Villa
-  affiliation: Direccíon de Evaluación Forestal y de Fauna Silvestre, Av. Javier Praod
-    Oeste 693, Magdalena del Mar, Peru.
 - family-names: Parada
   given-names: Germaine Alexander
-  affiliation: Museo de Historia Natural Noel Kempff Mercado, Universidad Autónoma
-    Gabriel Rene Moreno, Avenida Irala 565 Casilla Post al 2489, Santa Cruz, Santa
-    Cruz, Bolivia.
 - name: Guido
 - family-names: Vos
   given-names: Vincent Antoine
-  affiliation: Instituto de Investigaciones Forestales de la Amazonía, Universidad
-    Autónoma del Beni José Ballivián, Campus Universitario Final, Av. Ejercito, Riberalta,
-    Beni, Bolivia.
 - family-names: Cerón
   given-names: Carlos
-  affiliation: Escuela de Biología Herbario Alfredo Paredes, Universidad Central,
-    Ap. Postal 17.01.2177, Quito, Pichincha, Ecuador.
 - family-names: Maas
   given-names: Paul
-  affiliation: Naturalis Biodiversity Center, PO Box 9517, Leiden, 2300 RA, The Netherlands.
 - family-names: Silveira
   given-names: Marcos
-  affiliation: Centro de Ciências Biológicas e da Natureza, Universidade Federal do
-    Acre, Rodovia BR 364, Km 4, s/n, Distrito Industrial, Rio Branco, AC, 69915-559,
-    Brazil.
 - family-names: Stropp
   given-names: Juliana
-  affiliation: Museo Nacional de Ciencias Naturales (MNCN-CSIC), C. de José Gutiérrez
-    Abascal 2, Madrid, 28006, Spain.
 - family-names: Thomas
   given-names: Raquel
-  affiliation: Iwokrama International Centre for Rain Forest Conservation and Development,
-    Georgetown, Guyana.
 - family-names: Baker
   given-names: Tim R.
-  affiliation: School of Geography, University of Leeds, Woodhouse Lane, Leeds, LS2
-    9JT, UK.
 - family-names: Daly
   given-names: Doug
-  affiliation: New York Botanical Garden, 2900 Southern Blvd, Bronx, New York, NY,
-    10458-5126, USA.
 - family-names: Huamantupa-Chuquimaco
   given-names: Isau
-  affiliation: Herbario HAG, Universidad Nacional Amazónica de Madre de Dios (UNAMAD),
-    Av. Jorge Chávez 1160, Puerto Maldonado, Madre de Dios, Peru.
 - family-names: Vieira
   given-names: Ima Célia Guimarães
-  affiliation: Coordenação de Botânica, Museu Paraense Emílio Goeldi, Av. Magalhães
-    Barata 376, C.P. 399, Belém, PA, 66040-170, Brazil.
 - family-names: Albuquerque
   given-names: Bianca Weiss
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Fuentes
   given-names: Alfredo
-  affiliation: Herbario Nacional de Bolivia, Universitario UMSA, Casilla 10077 Correo
-    Central, La Paz, La Paz, Bolivia.
 - family-names: Klitgaard
   given-names: Bente
-  affiliation: Department for Accelerated Taxonomy, Royal Botanic Gardens, Kew, Richmond,
-    Surrey, TW9 3AE, UK.
 - family-names: Pena
   given-names: José Luis Marcelo
-  affiliation: Universidad Nacional de Jaén, Carretera Jaén San Ignacio Km 23, Jaén,
-    Cajamarca, 6801, Peru.
 - family-names: Silman
   given-names: Miles R.
-  affiliation: Biology Department and Center for Energy, Environment and Sustainability,
-    Wake Forest University, 1834 Wake Forest Rd, Winston Salem, NC, 27106, USA.
 - family-names: Tello
   given-names: J. Sebastián
-  affiliation: Center for Conservation and Sustainable Development, Missouri Botanical
-    Garden, P.O. Box 299, St. Louis, MO, 63166-0299, USA.
 - family-names: Vriesendorp
   given-names: Corine
-  affiliation: Science and Education, The Field Museum, 1400 S. Lake Shore Drive,
-    Chicago, IL, 60605-2496, USA.
 - family-names: Chave
   given-names: Jerome
-  affiliation: Laboratoire Evolution et Diversité Biologique, CNRS and Université
-    Paul Sabatier, UMR 5174 EDB, Toulouse, 31000, France.
 - family-names: Fiore
   given-names: Anthony Di
-  affiliation: Department of Anthropology, University of Texas at Austin, SAC 5.150,
-    2201 Speedway Stop C3200, Austin, TX, 78712, USA.
 - family-names: Hilário
   given-names: Renato Richard
-  affiliation: Universidade Federal do Amapá, Ciências Ambientais, Rod. Juscelino
-    Kubitschek km2, Macapá, AP, 68902-280, Brazil.
 - family-names: Phillips
   given-names: Juan Fernando
-  affiliation: Fundación Puerto Rastrojo, Cra 10 No. 24-76 Oficina 1201, Bogotá, DC,
-    Colombia.
 - family-names: Rivas-Torres
   given-names: Gonzalo
-  affiliation: Estación de Biodiversidad Tiputini, Colegio de Ciencias Biológicas
-    y Ambientales, Universidad San Francisco de Quito-USFQ, Quito, Pichincha, Ecuador.
-- family-names: Hildebrand
-  given-names: Patricio von
-  affiliation: Fundación Estación de Biología, Cra 10 No. 24-76 Oficina 1201, Bogotá,
-    DC, Colombia.
-- family-names: Pereira
-  given-names: Luciana de Oliveira
-  affiliation: Geography, College of Life and Environmental Sciences, University of
-    Exeter, Rennes Drive, Exeter, EX4 4RJ, UK.
+- family-names: von Hildebrand
+  given-names: Patricio
+- family-names: de Oliveira Pereira
+  given-names: Luciana
 - family-names: Barbosa
   given-names: Edelcilio Marques
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
-- family-names: Bonates
-  given-names: Luiz Carlos de Matos
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
+- family-names: de Matos Bonates
+  given-names: Luiz Carlos
 - family-names: Doza
   given-names: Hilda Paulette Dávila
-  affiliation: Servicios de Biodiversidad EIRL, Jr. Independencia 405, Iquitos, Loreto,
-    784, Peru.
 - family-names: Gómez
   given-names: Ricardo Zárate
-  affiliation: PROTERRA, Instituto de Investigaciones de la Amazonía Peruana (IIAP),
-    Av. A. Quiñones km 2,5, Iquitos, Loreto, 784, Peru.
 - family-names: Gonzales
   given-names: George Pepe Gallardo
-  affiliation: Servicios de Biodiversidad EIRL, Jr. Independencia 405, Iquitos, Loreto,
-    784, Peru.
 - family-names: Gonzales
   given-names: Therany
-  affiliation: ACEER Foundation, Jirón Cusco N° 370, Puerto Maldonado, Madre de Dios,
-    Peru.
 - family-names: Malhi
   given-names: Yadvinder
-  affiliation: Environmental Change Institute, Oxford University Centre for the Environment,
-    Dyson Perrins Building, South Parks Road, Oxford, England, OX1 3QY, UK.
-- family-names: Miranda
-  given-names: Ires Paula de Andrade
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
+- family-names: de Andrade Miranda
+  given-names: Ires Paula
 - family-names: Pinto
   given-names: Linder Felipe Mozombite
-  affiliation: Servicios de Biodiversidad EIRL, Jr. Independencia 405, Iquitos, Loreto,
-    784, Peru.
 - family-names: Prieto
   given-names: Adriana
-  affiliation: Instituto de Ciencias Naturales, Universidad Nacional de Colombia,
-    Apartado 7945, Bogotá, DC, Colombia.
 - family-names: Rudas
   given-names: Agustín
-  affiliation: Instituto de Ciencias Naturales, Universidad Nacional de Colombia,
-    Apartado 7945, Bogotá, DC, Colombia.
 - family-names: Ruschel
   given-names: Ademir R.
-  affiliation: Empresa Brasileira de Pesquisa Agropecuária, Embrapa Amazônia Oriental,
-    Trav. Dr. Enéas Pinheiro s/nº, Belém, PA, 66095-903, Brazil.
 - family-names: Silva
   given-names: Natalino
-  affiliation: Instituto de Ciência Agrárias, Universidade Federal Rural da Amazônia,
-    Av. Presidente Tancredo Neves 2501, Belém, PA, 66.077-830, Brazil.
 - family-names: Vela
   given-names: César I.A.
-  affiliation: Escuela Profesional de Ingeniería Forestal, Universidad Nacional de
-    San Antonio Abad del Cusco, Jirón San Martín 451, Puerto Maldonado, Madre de Dios,
-    Peru.
 - family-names: Zent
   given-names: Egleé L.
-  affiliation: Laboratory of Human Ecology, Instituto Venezolano de Investigaciones
-    Científicas - IVIC, Ado 20632, Caracas, DC, 1020A, Venezuela.
 - family-names: Zent
   given-names: Stanford
-  affiliation: Laboratory of Human Ecology, Instituto Venezolano de Investigaciones
-    Científicas - IVIC, Ado 20632, Caracas, DC, 1020A, Venezuela.
 - family-names: Cano
   given-names: Angela
-  affiliation: 'Laboratorio de Ecología de Bosques Tropicales y Primatología, Universidad
-    de los Andes, Carrera 1 # 18a- 10, Bogotá, DC, 111711, Colombia.'
 - family-names: Márquez
   given-names: Yrma Andreina Carrero
-  affiliation: Programa de Maestria de Manejo de Bosques, Universidad de los Andes,
-    Via Chorros de Milla, 5101, Mérida, Mérida, Venezuela.
 - family-names: Correa
   given-names: Diego F.
-  affiliation: 'Laboratorio de Ecología de Bosques Tropicales y Primatología, Universidad
-    de los Andes, Carrera 1 # 18a- 10, Bogotá, DC, 111711, Colombia.'
 - family-names: Costa
   given-names: Janaina Barbosa Pedrosa
-  affiliation: Empresa Brasileira de Pesquisa Agropecuária, Embrapa Amapá, Rod. Juscelino
-    Kubitschek km 5, Macapá, AP, 68903-419, Brazil.
 - family-names: Galbraith
   given-names: David
-  affiliation: School of Geography, University of Leeds, Woodhouse Lane, Leeds, LS2
-    9JT, UK.
 - family-names: Holmgren
   given-names: Milena
-  affiliation: Resource Ecology Group, Wageningen University & Research, Droevendaalsesteeg
-    3a, Lumen, building number 100, Wageningen, Gelderland, 6708 PB, The Netherlands.
 - family-names: Kalamandeen
   given-names: Michelle
-  affiliation: School of Earth, Environment and Society, McMaster University, 1280
-    Main Street West, Hamilton, Ontario, L8S 4K1, Canada.
 - family-names: Lobo
   given-names: Guilherme
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Nascimento
   given-names: Marcelo Trindade
-  affiliation: Laboratório de Ciências Ambientais, Universidade Estadual do Norte
-    Fluminense, Av. Alberto Lamego 2000, Campos dos Goytacazes, RJ, 28013-620, Brazil.
 - family-names: Oliveira
   given-names: Alexandre A.
-  affiliation: Instituto de Biociências - Dept. Ecologia, Universidade de Sao Paulo
-    - USP, Rua do Matão, Trav. 14, no. 321, Cidade Universitária, São Paulo, SP, 05508-090,
-    Brazil.
 - family-names: Ramirez-Angulo
   given-names: Hirma
-  affiliation: Instituto de Investigaciones para el Desarrollo Forestal (INDEFOR),
-    Universidad de los Andes, Conjunto Forestal, 5101, Mérida, Mérida, Venezuela.
 - family-names: Rocha
   given-names: Maira
-  affiliation: Ecology, Monitoring and Sustainable Use of Wetlands (MAUA), Instituto
-    Nacional de Pesquisas da Amazônia - INPA, Av. André Araújo, 2936, Petrópolis,
-    Manaus, AM, 69067-375, Brazil.
 - family-names: Scudeller
   given-names: Veridiana Vizoni
-  affiliation: Departamento de Biologia, Universidade Federal do Amazonas - UFAM ?
-    Instituto de Ciências Biológicas ? ICB1, Av General Rodrigo Octavio 6200, Manaus,
-    AM, 69080-900, Brazil.
 - family-names: Sierra
   given-names: Rodrigo
-  affiliation: GeoIS, El Día 369 y El Telégrafo, 3° Piso, Quito, Pichincha, Ecuador.
 - family-names: Tirado
   given-names: Milton
-  affiliation: GeoIS, El Día 369 y El Telégrafo, 3° Piso, Quito, Pichincha, Ecuador.
-- family-names: Heijden
-  given-names: Geertje van der
-  affiliation: Faculty of Social Sciences, University of Nottingham, University Park,
-    Nottingham, NG7 2RD, UK.
+- family-names: van der Heijden
+  given-names: Geertje
 - family-names: Torre
   given-names: Emilio Vilanova
-  affiliation: Instituto de Investigaciones para el Desarrollo Forestal (INDEFOR),
-    Universidad de los Andes, Conjunto Forestal, 5101, Mérida, Mérida, Venezuela.
 - family-names: Reategui
   given-names: Manuel Augusto Ahuite
-  affiliation: Medio Ambiente, PLUSPRETOL, Iquitos, Loreto, Peru.
 - family-names: Baider
   given-names: Cláudia
-  affiliation: The Mauritius Herbarium, Agricultural Services, Ministry of Agro-Industry
-    and Food Security, Reduit, 80835, Mauritius.
 - family-names: Balslev
   given-names: Henrik
-  affiliation: Department of Biology, Aarhus University, Building 1540, Aarhus C,
-    Aarhus, 8000, Denmark.
 - family-names: Cárdenas
   given-names: Sasha
-  affiliation: 'Laboratorio de Ecología de Bosques Tropicales y Primatología, Universidad
-    de los Andes, Carrera 1 # 18a- 10, Bogotá, DC, 111711, Colombia.'
 - family-names: Casas
   given-names: Luisa Fernanda
-  affiliation: 'Laboratorio de Ecología de Bosques Tropicales y Primatología, Universidad
-    de los Andes, Carrera 1 # 18a- 10, Bogotá, DC, 111711, Colombia.'
 - family-names: Farfan-Rios
   given-names: William
-  affiliation: Living Earth Collaborative, Washington University in Saint Louis, St.
-    Louis, MO, 63130, USA.
 - family-names: Ferreira
   given-names: Cid
-  affiliation: Coordenação de Biodiversidade, Instituto Nacional de Pesquisas da Amazônia
-    - INPA, Av. André Araújo, 2936, Petrópolis, Manaus, AM, 69067-375, Brazil.
 - family-names: Linares-Palomino
   given-names: Reynaldo
-  affiliation: Center for Conservation and Sustainability, Smithsonian Conservation
-    Biology Institute, 1100 Jefferson Dr. SW, Suite 3123, Washington, DC, 20560-0705,
-    USA.
 - family-names: Mendoza
   given-names: Casimiro
-  affiliation: Escuela de Ciencias Forestales (ESFOR), Universidad Mayor de San Simon
-    (UMSS), Sacta, Cochabamba, Bolivia.
 - family-names: Mesones
   given-names: Italo
-  affiliation: Department of Integrative Biology, University of California, Berkeley,
-    CA, 94720-3140, USA.
 - family-names: Giraldo
   given-names: Ligia Estela Urrego
-  affiliation: Departamento de Ciencias Forestales, Universidad Nacional de Colombia,
-    Calle 64 x Cra 65, Medellín, Antioquia, 1027, Colombia.
 - family-names: Villarroel
   given-names: Daniel
-  affiliation: Museo de Historia Natural Noel Kempff Mercado, Universidad Autónoma
-    Gabriel Rene Moreno, Avenida Irala 565 Casilla Post al 2489, Santa Cruz, Santa
-    Cruz, Bolivia.
 - family-names: Zagt
   given-names: Roderick
-  affiliation: Tropenbos International, Horaplantsoen 12, Ede, 6717 LT, The Netherlands.
 - family-names: Alexiades
   given-names: Miguel N.
-  affiliation: School of Anthropology and Conservation, University of Kent, Marlowe
-    Building, Canterbury, Kent, CT2 7NR, UK.
-- family-names: Oliveira
-  given-names: Edmar Almeida de
-  affiliation: Programa de Pós-Graduação em Ecologia e Conservação, Universidade do
-    Estado de Mato Grosso, Nova Xavantina, MT, Brazil.
+- family-names: de Oliveira
+  given-names: Edmar Almeida
 - family-names: Garcia-Cabrera
   given-names: Karina
-  affiliation: Biology Department and Center for Energy, Environment and Sustainability,
-    Wake Forest University, 1834 Wake Forest Rd, Winston Salem, NC, 27106, USA.
 - family-names: Hernandez
   given-names: Lionel
-  affiliation: Centro de Investigaciones Ecológicas de Guayana, Universidad Nacional
-    Experimental de Guayana, Calle Chile, urbaniz Chilemex, Puerto Ordaz, Bolivar,
-    Venezuela.
 - family-names: Cuenca
   given-names: Walter Palacios
-  affiliation: Herbario Nacional del Ecuador, Universidad Técnica del Norte, Quito,
-    Pichincha, Ecuador.
 - family-names: Pansini
   given-names: Susamar
-  affiliation: Programa de Pós- Graduação em Biodiversidade e Biotecnologia PPG- Bionorte,
-    Universidade Federal de Rondônia, Campus Porto Velho Km 9,5 bairro Rural, Porto
-    Velho, RO, 76.824-027, Brazil.
 - family-names: Pauletto
   given-names: Daniela
-  affiliation: Instituto de Biodiversidade e Florestas, Universidade Federal do Oeste
-    do Pará, Rua Vera Paz, Campus Tapajós, Santarém, PA, 68015-110, Brazil.
 - family-names: Arevalo
   given-names: Freddy Ramirez
-  affiliation: Facultad de Biologia, Universidad Nacional de la Amazonia Peruana,
-    Pevas 5ta cdra, Iquitos, Loreto, Peru.
 - family-names: Sampaio
   given-names: Adeilza Felipe
-  affiliation: Programa de Pós- Graduação em Biodiversidade e Biotecnologia PPG- Bionorte,
-    Universidade Federal de Rondônia, Campus Porto Velho Km 9,5 bairro Rural, Porto
-    Velho, RO, 76.824-027, Brazil.
 - family-names: Gamarra
   given-names: Luis Valenzuela
-  affiliation: Jardín Botánico de Missouri, Oxapampa, Pasco, Peru.
 - family-names: Aragão
   given-names: Luiz E. O. C.
-  orcid: https://orcid.org/0000-0002-4134-6708
-  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
-    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
-    Brazil.
-url: https://doi.org/10.5281/zenodo.7750985
-doi: 10.5281/zenodo.7750985
+url: https://doi.org/10.5281/zenodo.7750986
 year: '2023'
-repository: Zenodo
-version: 1.0.0
-type: dataset
+publisher:
+  name: Zenodo repository
