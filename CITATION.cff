@@ -1,9 +1,12 @@
 type: dataset
-title: 'Data from: Over 10,000 Pre-Columbian earthworks are still hidden throughout
-  Amazonia'
+title: 'Data from: Over 10,000 Pre-Columbian earthworks are still hidden throughout Amazonia'
 authors:
 - family-names: Peripato
   given-names: Vinicius
+  orcid: https://orcid.org/0000-0002-3137-211X
+  affiliation: Remote Sensing Division, National Institute for Space Research (INPE),
+    Av. dos Astronautas, 1758, Jardim da Granja, São José dos Campos, SP, 12227-010,
+    Brazil.
 - family-names: Levis
   given-names: Carolina
 - family-names: Moreira
